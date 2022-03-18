@@ -53,13 +53,13 @@
     <Compile Include="Category.cs">
       <DependentUpon>StoreFront.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Department.cs">
       <DependentUpon>StoreFront.tt</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs">
       <DependentUpon>StoreFront.tt</DependentUpon>
     </Compile>
+    <Compile Include="metadata\StoreFrontMetadata.cs" />
     <Compile Include="Product.cs">
       <DependentUpon>StoreFront.tt</DependentUpon>
     </Compile>
