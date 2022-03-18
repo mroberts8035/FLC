@@ -189,6 +189,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="android-chrome-192x192.png" />
+    <Content Include="android-chrome-512x512.png" />
+    <Content Include="apple-touch-icon.png" />
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\font-awesome.min.css" />
     <Content Include="Content\css\style.css" />
@@ -372,10 +375,13 @@
     <Content Include="Content\img\logo-alt.png" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\page-background.jpg" />
+    <Content Include="Content\img\Plaque.jpg" />
     <Content Include="Content\img\post01.jpg" />
     <Content Include="Content\img\post02.jpg" />
     <Content Include="Content\img\post03.jpg" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="favicon-16x16.png" />
+    <Content Include="favicon-32x32.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -384,6 +390,27 @@
     <Content Include="Content\DataTables\css\semanticui.scss" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
+    <Content Include="Content\img\BeachTowel.webp" />
+    <Content Include="Content\img\CoffeeOrDeathShirt.webp" />
+    <Content Include="Content\img\CoffeeTalkeeMug.webp" />
+    <Content Include="Content\img\CrazyCoffeeLady.webp" />
+    <Content Include="Content\img\DCMAShirt.webp" />
+    <Content Include="Content\img\DrinkCoffeeBeHappyMug.webp" />
+    <Content Include="Content\img\EngravedNecklace.webp" />
+    <Content Include="Content\img\EspressoMug.webp" />
+    <Content Include="Content\img\FamilyLoveCoffeeMug.webp" />
+    <Content Include="Content\img\FLCHoodie.webp" />
+    <Content Include="Content\img\FLCLogoBackpack.webp" />
+    <Content Include="Content\img\FLCMachineMug.webp" />
+    <Content Include="Content\img\FLCMinimalistShirt.webp" />
+    <Content Include="Content\img\FLCMug.webp" />
+    <Content Include="Content\img\FLCNecklace.webp" />
+    <Content Include="Content\img\FLCPillow.webp" />
+    <Content Include="Content\img\FLCShirt.webp" />
+    <Content Include="Content\img\HelloPillow.webp" />
+    <Content Include="Content\img\LaptopSleeve.webp" />
+    <Content Include="Content\img\Logo.webp" />
+    <Content Include="Content\img\RiseShineMug.webp" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
@@ -523,6 +550,7 @@
     <Content Include="Content\fonts\FontAwesome.otf" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="site.webmanifest" />
     <None Include="_Archive\Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="_Archive\Scripts\jquery-3.3.1.js" />
     <Content Include="_Archive\Scripts\jquery-3.3.1.min.js" />
