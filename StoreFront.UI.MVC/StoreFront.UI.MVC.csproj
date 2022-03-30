@@ -358,11 +358,14 @@
     <Content Include="Content\img\about-video.jpg" />
     <Content Include="Content\img\about.png" />
     <Content Include="Content\img\avatar.png" />
+    <Content Include="Content\img\BeachTowel.png" />
     <Content Include="Content\img\blog-post-background.jpg" />
     <Content Include="Content\img\blog01.jpg" />
     <Content Include="Content\img\blog02.jpg" />
     <Content Include="Content\img\blog03.jpg" />
     <Content Include="Content\img\blog04.jpg" />
+    <Content Include="Content\img\CoffeeOrDeathShirtpng.png" />
+    <Content Include="Content\img\CoffeeTalkeeMug.png" />
     <Content Include="Content\img\course01.jpg" />
     <Content Include="Content\img\course02.jpg" />
     <Content Include="Content\img\course03.jpg" />
@@ -371,9 +374,25 @@
     <Content Include="Content\img\course06.jpg" />
     <Content Include="Content\img\course07.jpg" />
     <Content Include="Content\img\course08.jpg" />
+    <Content Include="Content\img\CrazyCoffeeLady.png" />
     <Content Include="Content\img\cta1-background.jpg" />
     <Content Include="Content\img\cta2-background.jpg" />
+    <Content Include="Content\img\DCMAShirt.png" />
+    <Content Include="Content\img\DrinkCOffeeBeHappyMug.png" />
+    <Content Include="Content\img\EngravedNecklace.png" />
+    <Content Include="Content\img\EspressoMug.png" />
+    <Content Include="Content\img\FamilyLoveCoffeeMug.png" />
+    <Content Include="Content\img\FLCHoodie.png" />
+    <Content Include="Content\img\FLCLogoBackpack.png" />
+    <Content Include="Content\img\FLCMachineMug.png" />
+    <Content Include="Content\img\FLCMinimalistShirt.png" />
+    <Content Include="Content\img\FLCMug.png" />
+    <Content Include="Content\img\FLCNecklace.png" />
+    <Content Include="Content\img\FLCPillow.png" />
+    <Content Include="Content\img\FLCShirt.png" />
+    <Content Include="Content\img\HelloPillow.png" />
     <Content Include="Content\img\home-background.jpg" />
+    <Content Include="Content\img\LaptopSleeve.png" />
     <Content Include="Content\img\logo-alt.png" />
     <Content Include="Content\img\logo.png" />
     <Content Include="Content\img\page-background.jpg" />
@@ -381,6 +400,7 @@
     <Content Include="Content\img\post01.jpg" />
     <Content Include="Content\img\post02.jpg" />
     <Content Include="Content\img\post03.jpg" />
+    <Content Include="Content\img\RiseShineMug.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
@@ -392,27 +412,6 @@
     <Content Include="Content\DataTables\css\semanticui.scss" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
-    <Content Include="Content\img\BeachTowel.webp" />
-    <Content Include="Content\img\CoffeeOrDeathShirt.webp" />
-    <Content Include="Content\img\CoffeeTalkeeMug.webp" />
-    <Content Include="Content\img\CrazyCoffeeLady.webp" />
-    <Content Include="Content\img\DCMAShirt.webp" />
-    <Content Include="Content\img\DrinkCoffeeBeHappyMug.webp" />
-    <Content Include="Content\img\EngravedNecklace.webp" />
-    <Content Include="Content\img\EspressoMug.webp" />
-    <Content Include="Content\img\FamilyLoveCoffeeMug.webp" />
-    <Content Include="Content\img\FLCHoodie.webp" />
-    <Content Include="Content\img\FLCLogoBackpack.webp" />
-    <Content Include="Content\img\FLCMachineMug.webp" />
-    <Content Include="Content\img\FLCMinimalistShirt.webp" />
-    <Content Include="Content\img\FLCMug.webp" />
-    <Content Include="Content\img\FLCNecklace.webp" />
-    <Content Include="Content\img\FLCPillow.webp" />
-    <Content Include="Content\img\FLCShirt.webp" />
-    <Content Include="Content\img\HelloPillow.webp" />
-    <Content Include="Content\img\LaptopSleeve.webp" />
-    <Content Include="Content\img\Logo.webp" />
-    <Content Include="Content\img\RiseShineMug.webp" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
@@ -504,7 +503,9 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_archive\bootstrap.js" />
     <Content Include="Scripts\_archive\bootstrap.min.js" />
-    <Content Include="configs\connections.config" />
+    <Content Include="configs\connections.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="_Archive\blog-post.html" />
     <Content Include="_Archive\blog.html" />
     <Content Include="_Archive\contact.html" />
@@ -589,7 +590,9 @@
     <Content Include="Scripts\_archive\modernizr-2.8.3.js" />
     <Content Include="Scripts\_archive\respond.js" />
     <Content Include="Scripts\_archive\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

@@ -228,7 +228,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .navbar-brand .logo > img {
-	max-height:30px;
+	max-height:40px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -675,7 +675,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .footer-logo  .logo > img {
-	max-height:30px;
+	max-height:60px;
 }
 
 /* -- Footer Nav -- */
