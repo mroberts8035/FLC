@@ -185,6 +185,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AdminViewModel.cs" />
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -564,6 +565,8 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
+    <Content Include="Views\Home\Contact - Copy.cshtml" />
+    <Content Include="Views\Home\EmailConfirmation.cshtml" />
     <None Include="_Archive\Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="_Archive\Scripts\jquery-3.3.1.js" />
     <Content Include="_Archive\Scripts\jquery-3.3.1.min.js" />
