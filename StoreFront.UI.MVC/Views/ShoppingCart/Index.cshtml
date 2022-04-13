@@ -10,7 +10,7 @@
 }
 
 <p class="text-right">
-    @Html.ActionLink("Back to Shopping", "Index", "Books", null, new { @class = "btn btn-info" })
+    @Html.ActionLink("Back to Shopping", "Index", "Products", null, new { @class = "btn btn-info" })
 </p>
 
 <h2 class="text-center">@ViewBag.Title</h2>
@@ -31,9 +31,9 @@ else
 
     <table class="table">
         <tr>
-            <th>Book COver</th>
+            <th>Image</th>
             <th>Quantity</th>
-            <th>Title</th>
+            <th>Product</th>
             <th>Price</th>
             <th>Total</th>
             <th></th>
@@ -44,8 +44,8 @@ else
             //When calling on an item in a Dictionary, you have to specify Key or Value
             <tr>
                 <td>
-                    <img src="~/Content/imagestore/books/t_@item.Value.Product.BookImage"
-                         tabindex="@item.Value.Product.BookTitle" />
+                    @*<img src="~/Content/imagestore/books/t_@item.Value.Product.BookImage"
+                         tabindex="@item.Value.Product.BookTitle" />*@
                 </td>
                 <td>
                     @* Version 1- just show the quantity
@@ -54,7 +54,7 @@ else
                     @* Version 2- Provide a space for them to see the Qty AND update it *@
                     @using (Html.BeginForm("UpdateCart", "ShoppingCart", FormMethod.Post))
                     {
-                        @Html.Hidden("bookID", item.Key)
+                        @Html.Hidden("ProductID", item.Key)
                         @Html.TextBox("qty", item.Value.Qty, new { @class = "form-control", @style = "max-width: 50px; display: inline;" }) //Defaults to show the current qty to the user in the textbox
                         <input type="submit" value="Update Quantity" class="btn btn-info" />
                     }
@@ -64,9 +64,9 @@ else
                         totalCountOfItems += item.Value.Qty;
                     }
                 </td>
-                <td>
+                @*<td>
                     @item.Value.Product.BookTitle
-                </td>
+                </td>*@
                 <td>
                     @string.Format($"{item.Value.Product.Price:c}")
                 </td>

@@ -48,13 +48,13 @@ namespace StoreFront.UI.MVC.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult UpdateCart(int bookID, int qty)
+        public ActionResult UpdateCart(int ProductID, int qty)
         {
             //Get the cart from the Session and store it in a local variable
             Dictionary<int, CartItemViewModel> shoppingCart = (Dictionary<int, CartItemViewModel>)Session["cart"];
 
-            //Target correct cart item using bookID for the key. Then we can change the Qty roperty with the qty parameter
-            shoppingCart[bookID].Qty = qty;
+            //Target correct cart item using ProductID for the key. Then we can change the Qty roperty with the qty parameter
+            shoppingCart[ProductID].Qty = qty;
 
             //Return the (now updated) local cart to the session
             Session["cart"] = shoppingCart;
