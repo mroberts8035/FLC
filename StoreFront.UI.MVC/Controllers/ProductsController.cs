@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using StoreFront.Data.EF;
 using StoreFront.UI.MVC.Models;
 using System.Drawing;
+using StoreFront.UI.MVC.Utilities;
 
 
 namespace StoreFront.UI.MVC.Controllers
@@ -149,10 +150,70 @@ namespace StoreFront.UI.MVC.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ProductID,ProductName,Description,CategoryID,Price,StockStatusID,Quantity,ProductImage")] Product product)
+        public ActionResult Edit([Bind(Include = "ProductID,ProductName,Description,CategoryID,Price,StockStatusID,Quantity,ProductImage")] Product product, HttpPostedFileBase productImage)
         {
             if (ModelState.IsValid)
             {
+
+                #region File Upload
+
+                //Check to see if a new file has been uploaded., If not , the HiddenFor()
+                //in the view will maintain the original value.
+
+                string file = "NImage.png";
+
+                //If a file has been uploaded
+                if (productImage != null)
+                {
+                    //Get the name
+                    file = productImage.FileName;
+
+                    //Capture the extension
+                    string ext = file.Substring(file.LastIndexOf('.'));
+
+                    //Create a "whitelist" of accepted exts
+                    string[] goodExts = { ".jpeg", ".jpg", ".png", ".gif" };
+
+                    //Check that the uploaded file ext is in our list of acceptable exts
+                    //and that the file size is <= 4MB 
+
+                    if (goodExts.Contains(ext.ToLower()) && productImage.ContentLength <= 4194304) 
+                    {
+                        //Create a new file name (using a GUID)
+                        file = Guid.NewGuid() + ext;
+
+                        #region Resize Image
+
+                        string savePath = Server.MapPath("~/Content/imgstore/books/");
+
+                        Image convertedImage = Image.FromStream(productImage.InputStream);
+
+                        int maxImageSize = 500;
+
+                        int maxThumbSize = 100;
+
+                        ImageUtility.ResizeImage(savePath, file, convertedImage, maxImageSize, maxThumbSize);
+
+                        #endregion
+
+                        if (product.ProductImage != null && product.ProductImage != "noImage.png")
+                        {
+                            string path = Server.MapPath("~/Content/img/");
+                            ImageUtility.Delete(path, product.ProductImage);
+
+                        }
+
+                        //Update the property of the object
+                        product.ProductImage = file;
+
+                    }
+
+
+
+                }
+
+                #endregion
+
                 db.Entry(product).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

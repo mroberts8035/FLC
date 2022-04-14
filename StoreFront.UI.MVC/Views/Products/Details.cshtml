@@ -7,68 +7,69 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.ProductName)
-        </dt>
+    <div class="col-md-6">
+        <h4>Product</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ProductName)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.ProductName)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Quantity)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ProductImage)
-        </dt>
+            @*<dt>
+                @Html.DisplayNameFor(model => model.ProductImage)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ProductImage)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.ProductImage)
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.CategoryName)
-        </dt>
+            </dd>*@
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.CategoryName)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Category.CategoryName)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.StockStatus.StockStatus1)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Category.CategoryName)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.StockStatus.StockStatus1)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.StockStatus.StockStatus1)
+            </dt>
 
-    </dl>
+            <dd>
+                @Html.DisplayFor(model => model.StockStatus.StockStatus1)
+            </dd>
 
-</div>
+        </dl>
+
 
 @* ADDED THIS FOR "ADD TO CART" FUNCTIONALITY *@
 <p>
@@ -80,8 +81,12 @@
         <input type="submit" value="Add to Cart" class="btn btn-primary" name="qty" />
     }
 </p>
+    </div>
+</div>
 
-
+<div class="col-md-6">
+    <img src="~/Content/img/@Model.ProductImage" alt="@Model.ProductImage" title="@Model.ProductImage" />
+</div>
 
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ProductID }) |

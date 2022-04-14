@@ -174,6 +174,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomErrorsController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="Controllers\RolesAdminController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\UserAdminController.cs" />
+    <Compile Include="Exceptions\DBOfflineException.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -192,6 +194,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Utilities\ImageUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="android-chrome-192x192.png" />
@@ -367,7 +370,7 @@
     <Content Include="Content\img\blog02.jpg" />
     <Content Include="Content\img\blog03.jpg" />
     <Content Include="Content\img\blog04.jpg" />
-    <Content Include="Content\img\CoffeeOrDeathShirtpng.png" />
+    <Content Include="Content\img\CoffeeOrDeathShirt.png" />
     <Content Include="Content\img\CoffeeTalkeeMug.png" />
     <Content Include="Content\img\course01.jpg" />
     <Content Include="Content\img\course02.jpg" />
@@ -382,6 +385,7 @@
     <Content Include="Content\img\cta2-background.jpg" />
     <Content Include="Content\img\DCMAShirt.png" />
     <Content Include="Content\img\DrinkCOffeeBeHappyMug.png" />
+    <Content Include="Content\img\EmptyCoffeePot.jpg" />
     <Content Include="Content\img\EngravedNecklace.png" />
     <Content Include="Content\img\EspressoMug.png" />
     <Content Include="Content\img\FamilyLoveCoffeeMug.png" />
@@ -576,6 +580,7 @@
     <Content Include="Views\Home\Contact - Copy.cshtml" />
     <Content Include="Views\Home\EmailConfirmation.cshtml" />
     <Content Include="Views\ShoppingCart\Index.cshtml" />
+    <Content Include="Views\CustomErrors\Unresolved.cshtml" />
     <None Include="_Archive\Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="_Archive\Scripts\jquery-3.3.1.js" />
     <Content Include="_Archive\Scripts\jquery-3.3.1.min.js" />
